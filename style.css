@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.headernav{
+    background: linear-gradient(355deg,rgba(57, 140, 153, 1) 0%, rgba(27, 61, 196, 1) 50%, rgba(3, 2, 5, 1) 100%);
+    display: flex;
+
+}
+.navbar{
+   
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+h1{
+    color: cornsilk;
+    
+    padding: 6px;
+}
+footer{
+    background: linear-gradient(355deg,rgba(57, 140, 153, 1) 0%, rgba(27, 61, 196, 1) 50%, rgba(3, 2, 5, 1) 100%);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+}
+main{
+    min-height: calc(100vh - 80px);
+}
+.ftcontainer{
+     width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+.choices{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+     justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 80px;
+}
+.choice:hover{
+    opacity: 0.9;
+    background-color: #081b31;
+}
+.choice{
+    height: 170px;
+    width: 170px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+   
+     
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.scoreBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
+    margin-top: 5rem;
+}
+.userScore, .computerScore{
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.msgContainer{
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5rem;
+}
+#msg{
+    background-color:gold ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    display: inline;
+    padding: 8px;
+    font-family: monospace;
+    border-radius: 10px;
+    
+}
+
+
+
+@media (min-width:320px) and (max-width:767px) {
+    .choice{
+        height: 100px;
+        width: 100px;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    main{
+        min-height: calc(100vh - 80px);
+    }
+    .choices{
+        gap: 20px;
+    }
+    #msg{
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
